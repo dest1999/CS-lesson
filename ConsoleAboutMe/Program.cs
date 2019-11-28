@@ -13,7 +13,7 @@ namespace ConsoleAboutMe
         {
             Console.CursorVisible = false;
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("\n...ждём действий пользователя");
+            Console.WriteLine("\n ...ждём действий пользователя");
             Console.ReadKey();
             Console.CursorVisible = true;
             Console.ResetColor();

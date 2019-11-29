@@ -17,6 +17,7 @@ namespace ConsoleAboutMe
             Console.ReadKey();
             Console.CursorVisible = true;
             Console.ResetColor();
+            //System.Threading.Thread.Sleep(2000);
         }
     }
 

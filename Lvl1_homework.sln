@@ -25,7 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_sumOfNums", "sumOfNums\3_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_loginPassword", "4_loginPassword\4_loginPassword.csproj", "{7BAED57B-D191-4F0D-AD2B-CD743248A38F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTAdvanced", "IMTAdvanced\IMTAdvanced.csproj", "{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_IMTAdvanced", "IMTAdvanced\5_IMTAdvanced.csproj", "{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_goodNumbers", "goodNumbers\6_goodNumbers.csproj", "{D7F9BF64-512B-4897-B5A4-83E6C931099C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{8895BF1A-15FF-4860-9C2D-8D48418A4F3C} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 		{7BAED57B-D191-4F0D-AD2B-CD743248A38F} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 		{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
+		{D7F9BF64-512B-4897-B5A4-83E6C931099C} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC53954E-E7F4-451B-A3FD-8853DE78D7CF}

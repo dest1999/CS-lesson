@@ -14,7 +14,7 @@ namespace goodNumbers
         {
             int tmpi = i, sumOfNumbers = 0;
 
-            do //в этом цикле парсим сумму чисел
+            do //в этом цикле извлекаем сумму составляющих чисел
             {
                 sumOfNumbers += tmpi % 10;
                 tmpi /= 10;
@@ -44,7 +44,7 @@ namespace goodNumbers
                 }
             }
 
-            Console.WriteLine($"Программа отработала {DateTime.Now - start}, было найдено {qtyOfGoodNumbers} чисел");
+            Console.WriteLine($"Программа отработала за {DateTime.Now - start}, чисел найдено {qtyOfGoodNumbers}");
             Console.ReadKey();
         }
     }

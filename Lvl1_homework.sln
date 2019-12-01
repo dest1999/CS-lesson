@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_IMTAdvanced", "IMTAdvance
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_goodNumbers", "goodNumbers\6_goodNumbers.csproj", "{D7F9BF64-512B-4897-B5A4-83E6C931099C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_recursionAtoB", "recursionAtoB\7_recursionAtoB.csproj", "{8A93D75F-7E86-4F8B-994F-5750E07322DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7F9BF64-512B-4897-B5A4-83E6C931099C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A93D75F-7E86-4F8B-994F-5750E07322DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A93D75F-7E86-4F8B-994F-5750E07322DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A93D75F-7E86-4F8B-994F-5750E07322DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A93D75F-7E86-4F8B-994F-5750E07322DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{7BAED57B-D191-4F0D-AD2B-CD743248A38F} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 		{A63609ED-6D6A-4AD3-8D87-B82297D8C8F9} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 		{D7F9BF64-512B-4897-B5A4-83E6C931099C} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
+		{8A93D75F-7E86-4F8B-994F-5750E07322DC} = {B7141CE7-26A6-4210-9BFF-310F294FD20A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC53954E-E7F4-451B-A3FD-8853DE78D7CF}

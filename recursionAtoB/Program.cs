@@ -9,11 +9,11 @@ namespace recursionAtoB
 {
     class Program
     {
-        static int Recursive (int a, int b)
+        static void Recursive (int a, int b)
         {
             Console.WriteLine(++a);
             if (a < b) Recursive(a, b);
-            return a;
+            
         }
 
 
@@ -26,7 +26,7 @@ namespace recursionAtoB
             Console.Write("Введите число B: ");
             int b = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(Recursive(a, b));
+            Recursive(a, b);
 
 
             Console.ReadKey();

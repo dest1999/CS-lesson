@@ -9,26 +9,20 @@ namespace recursionAtoB
 {
     class Program
     {
-        static void Recursive (int a, int b)
+        static int Recursive(int a, int b)
         {
-            Console.WriteLine(++a);
-            if (a < b) Recursive(a, b);
-            
+            Console.WriteLine(a++);
+            if (a <= b) return (a + Recursive(a, b));
+            else return 0;
         }
-
-
-
 
         static void Main(string[] args)
         {
             Console.Write("Введите число A: ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int A = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите число B: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-
-            Recursive(a, b);
-
-
+            int B = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n\n" + (A + Recursive(A, B))); //А+  это костыль для исрпавления неправильного подсчета суммы в Recursive, почему-то не суммируется первый элемент
             Console.ReadKey();
         }
     }

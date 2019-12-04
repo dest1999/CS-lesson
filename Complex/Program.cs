@@ -14,7 +14,7 @@ namespace Complex
         public double im;
         public double re;
 
-        public Complex Plus (Complex x)
+        public Complex Plus(Complex x)
         {
             Complex y;
             y.im = im + x.im;
@@ -45,6 +45,20 @@ namespace Complex
 
     }
 
+    class ComplexClass
+    {
+        public double re;
+        public double im;
+
+        public ComplexClass Plus(ComplexClass x)
+        {
+            ComplexClass x = new ComplexClass();
+
+            return 0;
+        }
+
+
+    }
 
     class Program
     {

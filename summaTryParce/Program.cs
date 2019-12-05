@@ -21,14 +21,13 @@ namespace summaTryParce
                     Console.WriteLine("Вы ввели не число.");
                 }
 
-                if ((i % 2 == 1) && (i > 0))
+                if ((i > 0) && (i % 2 == 1))
                 {
                     sum += i;
+                    Console.WriteLine($"Сумма увеличена на {i} и теперь составляет {sum}");
                 }
-
-                Console.WriteLine($"Сумма {sum}");
             } while (i != 0);
-            Console.WriteLine($"Выбран выход. Сумма чисел {sum}");
+            Console.WriteLine($"Выход. Сумма {sum}");
 
             Console.ReadKey();
         }

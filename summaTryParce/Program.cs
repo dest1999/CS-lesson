@@ -12,14 +12,20 @@ namespace summaTryParce
     {
         static void Main(string[] args)
         {
-            int i = 0, sum = 0;
+            int i, sum = 0;
             Console.WriteLine("Будет подсчитана сумма введенных нечётных положительных чисел.\nДля выхода введите 0");
             do
             {
                 while (!int.TryParse(Console.ReadLine(), out i))
+                {
                     Console.WriteLine("Вы ввели не число.");
+                }
 
-                if ((i % 2 == 1) && (i > 0)) sum += i;
+                if ((i % 2 == 1) && (i > 0))
+                {
+                    sum += i;
+                }
+
                 Console.WriteLine($"Сумма {sum}");
             } while (i != 0);
             Console.WriteLine($"Выбран выход. Сумма чисел {sum}");

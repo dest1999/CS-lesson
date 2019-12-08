@@ -12,18 +12,54 @@ namespace arrayStaticClass
 {
     public static class ArrayStaticClass
     {
-        int[] array;
+        /*static int[] array    //подсказка
+        {
+            get { return array; }
 
+            set { array = value; }
+        }*/
 
+        public static int ArrayAnalize(int[] array)
+        {
+            int cnt = 0;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if ((array[i] % 3 == 0) ^ (array[i + 1] % 3 == 0))
+                {
+                    cnt++;
+                }
+            }
+            return cnt;
+
+        }
 
     }
-
-
 
     class Program
     {
         static void Main(string[] args)
         {
+            int[] array = new int[20];
+            Random initArrayRnd = new Random();
+            int count = 0;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = initArrayRnd.Next(-10000, 10001);
+            }
+            Console.WriteLine("Элементы массива:");
+            foreach (var item in array)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+
+
+            count = ArrayStaticClass.ArrayAnalize(array);
+            Console.WriteLine($"Найдено пар: {count}");
+
+            Console.ReadKey();
         }
     }
 }

@@ -24,11 +24,11 @@ namespace arrayDiv3
             Console.WriteLine("Элементы массива:");
             foreach (var item in array)
             {
-                Console.WriteLine(item);
+                Console.Write(item + " ");
             }
             Console.WriteLine();
             
-            for (int i = 0; i < array.Length; i += 2)
+            for (int i = 0; i < array.Length - 1; i++)
             {
                 if ((array[i] % 3 == 0) ^ (array[i+1] % 3 == 0))
                 {

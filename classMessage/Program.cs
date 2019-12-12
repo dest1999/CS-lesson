@@ -80,8 +80,6 @@ namespace classMessage
                 {
                     strB.Append(" " + word);
                 }
-                    
-                    
             }
             return strB;
         }
@@ -94,16 +92,12 @@ namespace classMessage
         {
             Console.Write("Введите сообщение: ");
             string messageIs = Console.ReadLine();
-            /*Console.Write("Максимальное количество букв: ");
+            Console.Write("Максимальное количество букв: ");
             int length = int.Parse(Console.ReadLine());
             Message.ShowWords(messageIs, length);
-            */
-
 
             Console.WriteLine("Самое длинное слово: " + Message.LongestWord(messageIs));
             Console.WriteLine("StringBuilder выбрал самые длинные слова и сформировал строку :" + Message.CollectLongestWords(messageIs));
-
-
 
             Console.Write("Введите последний символ в удаляемых словах: ");
             char ch = Console.ReadKey().KeyChar;

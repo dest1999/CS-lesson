@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_findMinFunction", "findMi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_studentsCollection", "studentsCollection\3_studentsCollection.csproj", "{8E69A1B3-3F2F-416D-8427-84B1BE3A5F64}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_HW", "07_HW", "{8162212D-EA3D-4C71-8192-A02D0440B6BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_Udvoitel", "WF_Udvoitel\WF_Udvoitel.csproj", "{D073DAB4-9613-48A3-AC45-F31660463406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,10 @@ Global
 		{8E69A1B3-3F2F-416D-8427-84B1BE3A5F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E69A1B3-3F2F-416D-8427-84B1BE3A5F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E69A1B3-3F2F-416D-8427-84B1BE3A5F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D073DAB4-9613-48A3-AC45-F31660463406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D073DAB4-9613-48A3-AC45-F31660463406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D073DAB4-9613-48A3-AC45-F31660463406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D073DAB4-9613-48A3-AC45-F31660463406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +181,7 @@ Global
 		{C41763F5-F7CC-4A7B-A6E5-2B05A9586262} = {5D18139C-CCD1-40DB-890C-9B9164FD70BA}
 		{97702F66-EACB-4632-BBA8-65BE43AD70EF} = {5D18139C-CCD1-40DB-890C-9B9164FD70BA}
 		{8E69A1B3-3F2F-416D-8427-84B1BE3A5F64} = {5D18139C-CCD1-40DB-890C-9B9164FD70BA}
+		{D073DAB4-9613-48A3-AC45-F31660463406} = {8162212D-EA3D-4C71-8192-A02D0440B6BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC53954E-E7F4-451B-A3FD-8853DE78D7CF}

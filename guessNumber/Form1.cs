@@ -22,35 +22,43 @@ namespace guessNumber
     public partial class Form1 : Form
     {
         Random rnd = new Random();
-        int userAnswer, numberIs;
-
-        private void btnUserAnswer_Click(object sender, EventArgs e)
-        {
-            userAnswer = int.Parse(tbUserAnswer.Text);
-            if (userAnswer == numberIs)
-            {
-                MessageBox.Show("Вы угадали");
-            }
-            else if (userAnswer < numberIs)
-            {
-                MessageBox.Show("Слишком маленькое");
-            }
-            else if (userAnswer > numberIs)
-            {
-                MessageBox.Show("Слишком большое");
-            }
-        }
+        int userAnswer, numberIs, i = 0;
 
         public Form1()
         {
             InitializeComponent();
             numberIs = rnd.Next(1, 101);
+            lblCounts.Text = "";
         }
 
-        /*
-        private void tbUserAnswer_TextChanged(object sender, EventArgs e)
+        private void lblCounts_MouseHover(object sender, EventArgs e)
         {
+            toolTip1.Show(numberIs.ToString(), this);
+        }
 
-        }*/
+        private void btnUserAnswer_Click(object sender, EventArgs e)
+        {
+            lblCounts.Text = "Количество попыток угадать: " + (++i).ToString();
+            userAnswer = int.Parse(tbUserAnswer.Text);
+            if (userAnswer == numberIs)
+            {
+                lblHint.Text = "Да, этим числом было " + numberIs.ToString();
+                MessageBox.Show("Вы угадали");
+                btnUserAnswer.Enabled = false;
+            }
+            else if (userAnswer < numberIs)
+            {
+                lblHint.Text = "Слишком маленькое число";
+            }
+            else if (userAnswer > numberIs)
+            {
+                lblHint.Text = "Слишком большое число";
+            }
+        }
+
+        private void tbUserAnswer_Click(object sender, EventArgs e)
+        {
+            tbUserAnswer.Text = "";
+        }
     }
 }

@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 154);
+            this.ClientSize = new System.Drawing.Size(264, 154);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lblTargetNumber);
             this.Controls.Add(this.btnNewGame);

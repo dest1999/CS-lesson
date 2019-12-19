@@ -35,7 +35,7 @@ namespace WF_Udvoitel
             lblNumber.Text = constToLabels[1] + i.ToString();
             targetNumber = rnd.Next(15, 101);
             lblTargetNumber.Text = constToLabels[0] + targetNumber.ToString();
-            MessageBox.Show("Вы должный получить число " + targetNumber.ToString());
+            MessageBox.Show("Вы должны получить число " + targetNumber.ToString());
             lblCount.Text = constToLabels[2] + clicksCounter.ToString();
         }
 
@@ -66,7 +66,7 @@ namespace WF_Udvoitel
             btnReset_Click(this, e);
             targetNumber = rnd.Next(15, 101);
             lblTargetNumber.Text = constToLabels[0] + targetNumber.ToString();
-            MessageBox.Show("Вы должный получить число " + targetNumber.ToString());
+            MessageBox.Show("Вы должны получить число " + targetNumber.ToString());
         }
 
         private void youWinner(object sender, EventArgs e)

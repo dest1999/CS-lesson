@@ -22,7 +22,7 @@ namespace WF_Udvoitel
 {
     public partial class Form1 : Form
     {
-        //Stack<> commands = new Stack<>;
+        Stack<int> commands = new Stack<int>();
         Random rnd = new Random();
         int i = 1, clicksCounter = 0, targetNumber;
         string[] constToLabels = { "Число: ", "Ваше число: ", "Увеличения: " };
@@ -31,12 +31,13 @@ namespace WF_Udvoitel
             InitializeComponent();
             btnCommand1.Text = "+1";
             btnCommand2.Text = "x2";
-            btnReset.Text = "Clear";
+            btnReset.Text = "Очистить";
             lblNumber.Text = constToLabels[1] + i.ToString();
             targetNumber = rnd.Next(15, 101);
             lblTargetNumber.Text = constToLabels[0] + targetNumber.ToString();
             MessageBox.Show("Вы должны получить число " + targetNumber.ToString());
             lblCount.Text = constToLabels[2] + clicksCounter.ToString();
+            Cancel.Enabled = false;
         }
 
         private void btnPlus1_Click(object sender, EventArgs e)
@@ -44,6 +45,8 @@ namespace WF_Udvoitel
             lblCount.Text = constToLabels[2] + (++clicksCounter).ToString();
             lblNumber.Text = constToLabels[1] + (++i).ToString();
             if (i == targetNumber) youWinner(this, e);
+            Memo(this, e);
+            Cancel.Enabled = true;
         }
 
         private void btnMultiple2_Click(object sender, EventArgs e)
@@ -51,6 +54,8 @@ namespace WF_Udvoitel
             lblCount.Text = constToLabels[2] + (++clicksCounter).ToString();
             lblNumber.Text = constToLabels[1] + (i *= 2).ToString();
             if (i == targetNumber) youWinner(this, e);
+            Memo(this, e);
+            Cancel.Enabled = true;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -69,11 +74,32 @@ namespace WF_Udvoitel
             MessageBox.Show("Вы должны получить число " + targetNumber.ToString());
         }
 
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            if (commands.Count < 2)
+            {
+                Cancel.Enabled = false;
+            }
+            else
+            {
+                commands.Pop();
+                i = commands.Peek();
+                lblNumber.Text = constToLabels[1] + i.ToString();
+            }
+        }
+
         private void youWinner(object sender, EventArgs e)
         {
             MessageBox.Show("Выигрыш!!!\nНачинаем заново");
             btnNewGame_Click(this, e);
+            commands.Clear();
         }
+
+        private void Memo(object sender, EventArgs e)
+        {
+            commands.Push(i);
+        }
+
 
     }
 }

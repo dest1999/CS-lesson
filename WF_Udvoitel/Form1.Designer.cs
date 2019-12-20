@@ -35,13 +35,14 @@
             this.btnNewGame = new System.Windows.Forms.Button();
             this.lblTargetNumber = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
+            this.Cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCommand1
             // 
-            this.btnCommand1.Location = new System.Drawing.Point(163, 61);
+            this.btnCommand1.Location = new System.Drawing.Point(147, 61);
             this.btnCommand1.Name = "btnCommand1";
-            this.btnCommand1.Size = new System.Drawing.Size(75, 23);
+            this.btnCommand1.Size = new System.Drawing.Size(91, 23);
             this.btnCommand1.TabIndex = 0;
             this.btnCommand1.Text = "+1";
             this.btnCommand1.UseVisualStyleBackColor = true;
@@ -49,9 +50,9 @@
             // 
             // btnCommand2
             // 
-            this.btnCommand2.Location = new System.Drawing.Point(163, 90);
+            this.btnCommand2.Location = new System.Drawing.Point(147, 90);
             this.btnCommand2.Name = "btnCommand2";
-            this.btnCommand2.Size = new System.Drawing.Size(75, 23);
+            this.btnCommand2.Size = new System.Drawing.Size(91, 23);
             this.btnCommand2.TabIndex = 1;
             this.btnCommand2.Text = "x2";
             this.btnCommand2.UseVisualStyleBackColor = true;
@@ -59,9 +60,9 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(163, 119);
+            this.btnReset.Location = new System.Drawing.Point(147, 119);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(91, 23);
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "rst";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -78,11 +79,11 @@
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(163, 32);
+            this.btnNewGame.Location = new System.Drawing.Point(147, 32);
             this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(75, 23);
+            this.btnNewGame.Size = new System.Drawing.Size(91, 23);
             this.btnNewGame.TabIndex = 4;
-            this.btnNewGame.Text = "New game";
+            this.btnNewGame.Text = "Начать заново";
             this.btnNewGame.UseVisualStyleBackColor = true;
             this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
@@ -104,11 +105,22 @@
             this.lblCount.TabIndex = 6;
             this.lblCount.Text = "count";
             // 
+            // Cancel
+            // 
+            this.Cancel.Location = new System.Drawing.Point(147, 148);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(91, 23);
+            this.Cancel.TabIndex = 7;
+            this.Cancel.Text = "Отменить ход";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 154);
+            this.ClientSize = new System.Drawing.Size(264, 180);
+            this.Controls.Add(this.Cancel);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lblTargetNumber);
             this.Controls.Add(this.btnNewGame);
@@ -133,6 +145,7 @@
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Label lblTargetNumber;
         private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Button Cancel;
     }
 }
 

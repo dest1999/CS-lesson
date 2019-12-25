@@ -67,7 +67,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_HW", "08_HW", "{FF900AB2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_reflectionDateTime", "tmp\1_reflectionDateTime.csproj", "{EA77FC2E-9D34-4FD2-BFB3-368C23776292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linkElements", "linkElements\linkElements.csproj", "{ECF9C170-B465-4B31-B70C-EE218DD522C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_linkElements", "linkElements\2_linkElements.csproj", "{ECF9C170-B465-4B31-B70C-EE218DD522C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_BelieveOrNotBelieve", "BelieveOrNotBelieve\3_BelieveOrNotBelieve.csproj", "{E35908B5-BF90-403A-A2FA-32512D222F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -175,6 +177,10 @@ Global
 		{ECF9C170-B465-4B31-B70C-EE218DD522C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF9C170-B465-4B31-B70C-EE218DD522C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF9C170-B465-4B31-B70C-EE218DD522C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35908B5-BF90-403A-A2FA-32512D222F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35908B5-BF90-403A-A2FA-32512D222F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35908B5-BF90-403A-A2FA-32512D222F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35908B5-BF90-403A-A2FA-32512D222F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -205,6 +211,7 @@ Global
 		{97866890-195F-44D2-A822-FFE970A1E4B6} = {8162212D-EA3D-4C71-8192-A02D0440B6BA}
 		{EA77FC2E-9D34-4FD2-BFB3-368C23776292} = {FF900AB2-4F7F-4FAE-AC05-6CAFB578EE80}
 		{ECF9C170-B465-4B31-B70C-EE218DD522C0} = {FF900AB2-4F7F-4FAE-AC05-6CAFB578EE80}
+		{E35908B5-BF90-403A-A2FA-32512D222F01} = {FF900AB2-4F7F-4FAE-AC05-6CAFB578EE80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC53954E-E7F4-451B-A3FD-8853DE78D7CF}
